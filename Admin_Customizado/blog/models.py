@@ -14,5 +14,10 @@ class Post(models.Model):
         self.published_date = timezone.now()
         self.save()
 
+    def isImage(self):
+        if (self.image == None):
+            return False
+        return True
+
     def __str__(self):
         return self.title

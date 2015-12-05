@@ -7,8 +7,8 @@ class Post(models.Model):
     text = models.TextField()
     created_date = models.DateTimeField(
             default=timezone.now)
-    published_date = models.DateTimeField(blank=True, null=True)
-    image = models.ImageField(blank=True, null=True)
+    published_date = models.DateTimeField(
+            blank=True, null=True)
 
     def publish(self):
         self.published_date = timezone.now()
@@ -16,3 +16,6 @@ class Post(models.Model):
 
     def __str__(self):
         return self.title
+    @staticmethod
+    def find_all(order_by):
+        return Post.objects.filter(published_date__lte=timezone.now()).order_by(order_by)

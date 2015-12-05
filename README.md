@@ -9,6 +9,6 @@ Segue a lista de aplicações:
 
 
 #Referências:
-* [__Site Oficial do Django__](www.djangoproject.com)
+* [__Site Oficial do Django__](http://www.djangoproject.com)
 * [__Django Girls Extension__](http://tutorial.djangogirls.org/)
 * [__Django Girls Extension__](https://www.gitbook.com/book/djangogirls/django-girls-tutorial-extensions/details) 
